@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE properties SYSTEM 'http://java.sun.com/dtd/properties.dtd'>
+<properties>
+
+    <entry key='database.driver'>com.mysql.cj.jdbc.Driver</entry> 
+    <entry key='database.url'>jdbc:mysql://mariadb:3306/traccar?allowMultiQueries=true&amp;autoReconnect=true&amp;useUnicode=yes&amp;characterEncoding=UTF-8&amp;sessionVariables=sql_mode=''</entry>
+    <entry key='database.user'>root</entry> 
+    <entry key='database.password'>my-secret-pw</entry>
+
+    <entry key='notificator.types'>web,sms,command,firebase</entry>
+    <entry key='notificator.sms.manager.class'>org.traccar.sms.HttpSmsClient</entry>
+    <entry key='sms.http.url'>http://evolution-api:8080/message/sendText/trackingsystem</entry>
+    <entry key='sms.http.authorizationHeader'>apikey</entry>
+    <entry key='sms.http.authorization'>B3B91F1DA7A5C7EE7EDDECBDAC85666</entry>
+    <entry key='sms.http.template'>
+
+            {"number": "{phone}",
+            "text":"{message}"
+            }
+    </entry>
+
+</properties>
