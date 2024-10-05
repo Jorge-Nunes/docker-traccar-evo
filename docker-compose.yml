@@ -20,6 +20,9 @@ services:
       retries: 5
 
   traccar:
+    build:
+      context: .
+      dockerfile: Dockerfile
     image: traccar-preview:6.5
     container_name: traccar
     hostname: traccar

@@ -6,7 +6,7 @@ New tracker GPS devices can connect on port 5000-5150 and see https://www.tracca
 
 ## Start MySQL 
 
-Start MySQL which will automatically create a database named 'traccar' with user 'traccar' and password 'traccar' (see https://raw.githubusercontent.com/marcelmaatkamp/docker-traccar/master/conf/mysql.sql)
+Start MySQL which will automatically create a database named 'traccar' with user 'traccar' and password 'traccar'
 
 ```
 docker-compose up -d mysql
